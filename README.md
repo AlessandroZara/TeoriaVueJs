@@ -14,6 +14,6 @@ Inside the various files, in addition to the code, there are also explanations w
 the features of the "VUEJS" framework
 
 ## USE
-1. Download the repository via zip or with git using the command "git clone: // repository name"
+1. Download the repository as zip or as git using the command "git clone: // repository name"
 2. Install node modules with npm install or yarn
 3. Use npm run to see the results of the written code in the browser
