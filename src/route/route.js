@@ -4,7 +4,8 @@ import Page2 from "../views/Page2.vue";
 import VElse from "../views/V-Else.vue";
 import Key from "../views/Key.vue";
 import VFor from "../views/V-For.vue";
-import Computed from '../views/Computed.vue'
+import Computed from '../views/Computed.vue';
+import Slot from '../views/Slot.vue'
 
 
 
@@ -40,7 +41,12 @@ const routes = [
       name: "computed",
       component: Computed,
     },
-];
+  {
+      path: "/slot",
+        name: "slot",
+        component: Slot,
+  },
+  ];
 
 const router = createRouter({
   history: createWebHistory(),

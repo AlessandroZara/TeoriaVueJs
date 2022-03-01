@@ -6,6 +6,7 @@
        <router-link to="/key">Key</router-link>|
        <router-link to="/v-for">V-For</router-link>|
        <router-link to="/computed">Computed</router-link>|
+       <router-link to="/slot">Slot</router-link>|
       <router-view />
   </div>
     
