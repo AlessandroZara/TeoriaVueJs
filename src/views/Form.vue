@@ -63,7 +63,7 @@
       </template>
     </div>
     <div>
-      Hai selezionato:<br />
+      Hai selezionato :<br />
       {{ checked }}
     </div>
     <br />
