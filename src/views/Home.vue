@@ -6,7 +6,7 @@
     </p>
     <img v-bind:src="imgPath" width="300" height="100" />
     <p :style="styleObject">Donec sed odio dui.</p>
-    <p :style="[baseStyles, overridingStyles]">Ti Odio bastardo</p>
+    <p :style="[baseStyles, overridingStyles]">Ciaone a tutti</p>
     <button type="button" class="btn" :class="classObject">Danger</button><br />
     <button type="button" :class="['btn', warningClass]">Danger</button>
     <br />
@@ -35,8 +35,12 @@ export default {
       },
       warningClass: "btn-warning",
       html: `
-          <p style="color: mediumturquoise; font-size: 2em;" class="my-class">
-            codice html
+          <p style="color: blue; font-size: 2em;" class="my-class">
+            Guida completa ,LATO CODICE, a Vue.js, framework Javascript per la creazione di interfacce utente e single-page applications 
+            di nuova generazione. <br>Nato da Evan You, ex sviluppatore di Google, Vue.js si prefigge l'obiettivo di "prendere il meglio" 
+            di AngularJS per creare qualcosa di veramente snello ed efficiente nell'ambito delle moderne tecnologie di sviluppo.<br>
+            Questo codice è stato scritto seguendo la guida di Mr Web. <br>
+            il suo sito è: <a href="https://www.mrw.it/javascript/guida-vue-js/" target=:_blank><u>https://www.mrw.it/javascript/guida-vue-js/</u></a>
           </p>
            `,
       imgPath:
@@ -44,7 +48,7 @@ export default {
       styleObject: {
         fontSize: "2em",
         fontWeight: 800,
-        color: "#333435",
+        color: "#332456",
       },
       baseStyles: {
         fontSize: "2em",

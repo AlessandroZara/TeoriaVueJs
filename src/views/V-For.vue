@@ -1,4 +1,14 @@
 <template>
+<!--In realtà nella forma più semplice, la direttiva v-for permette di ripetere la stessa struttura di elementi N volte, 
+  dove N è un numero intero da noi passato
+  La direttiva v-for richiede come espressione la particolare sintassi 'valoreCorrente in valoreMassimo' 
+  in cui valoreMassimo può essere un intero o una proprietà definita nell'oggetto data dell'istanza.
+    <ul>
+    <li v-for="n in valoreMassimo">{{ n }}</li>
+    </ul> 
+    Partendo dal valore 1 e arrivando fino a valoreMassimo, Vue provvede a ripetere l'elemento 
+    (ed eventuali elementi discendenti) su cui è applicata la direttiva v-for.  
+  -->
   <div>
     <h1>V-For</h1>
     <ul>
