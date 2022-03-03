@@ -8,6 +8,7 @@
        <router-link to="/computed">Computed</router-link>|
        <router-link to="/slot">Slot</router-link>|
        <router-link to="/lifecycle-components">LifeCycleComponents</router-link>|
+       <router-link to="/componenti-dinamici">Componenti Dinamici</router-link>|
       <router-view />
   </div>
     

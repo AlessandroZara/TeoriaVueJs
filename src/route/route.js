@@ -6,7 +6,8 @@ import Key from "../views/Key.vue";
 import VFor from "../views/V-For.vue";
 import Computed from '../views/Computed.vue';
 import Slot from '../views/Slot.vue'
-import LifeCicleComponents from '../views/LifieCylcleComponents.vue'
+import LifeCicleComponents from '../views/LifieCylcleComponents.vue';
+import ComponentiDinamici from '../views/ComponentiDinamici.vue'
 
 
 
@@ -50,6 +51,11 @@ const routes = [
     path: "/lifecycle-components",
       name: "lifecycle-components",
       component: LifeCicleComponents,
+  },
+  {
+    path: "/componenti-dinamici",
+      name: "componenti-dinamici",
+      component: ComponentiDinamici,
   },
   ];
 
