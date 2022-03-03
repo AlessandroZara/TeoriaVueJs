@@ -32,9 +32,9 @@
     <br />
     <br />
     <div>
-      <h2>model number ma passato come stringa</h2>
-      <input type="number" v-model="value3" />
-      <p>Value: {{ value3 }}</p>
+      <h2>model number ma passato come stringa (Vedere console sviluppatori)</h2>
+      <input  @change="validate()" type="number" v-model="value3" />
+      <p >Value: {{ value3 }}</p>
       <!-- Nonostante abbiamo usato l'attributo type="number", la proprietà value viene comunque convertita in una stringa. -->
     </div>
     <br />
@@ -42,9 +42,9 @@
     <!-- Al contrario, grazie al modificatore ".number", la proprietà value conterrà sempre dei valori di tipo Number 
        (vale anche per i campi di input con attributo type="text"). -->
     <div>
-      <h2>model number ma passato come number</h2>
-      <input type="number" v-model.number="value4" />
-      <p>Value: {{ value4 }}</p>
+      <h2>model number ma passato come number (Vedere console sviluppatori)</h2>
+      <input @change="validate2()" type="number" v-model.number="value4" />
+      <p >Value: {{ value4 }}</p>
     </div>
     <br />
     <br />
@@ -76,21 +76,39 @@
      -->
 
     <form @submit.prevent="onSubmit">
-        <h1>Form Esempio</h1>
+      <h1>Form Esempio</h1>
       <div class="mb-3">
         <label for="name">Nome</label>
-        <input type="text" v-model.trim="details.name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+        <input
+          type="text"
+          v-model.trim="details.name"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
       </div>
       <div class="mb-3">
         <label for="email">E-mail</label>
-        <input type="email" id="email" v-model.trim="details.email" class="form-control" />
+        <input
+          type="email"
+          id="email"
+          v-model.trim="details.email"
+          class="form-control"
+        />
       </div>
       <div class="mb-3">
         <label for="age">Et&agrave;</label>
-        <input type="number" id="age" v-model.number="details.age" class="form-control"/>
+        <input
+          type="number"
+          id="age"
+          v-model.number="details.age"
+          class="form-control"
+        />
       </div>
       <div class="mb-3">
-         <label  class="form-label"><strong>Seleziona JS framework preferito</strong></label>
+        <label class="form-label"
+          ><strong>Seleziona JS framework preferito</strong></label
+        >
         <select class="form-select" v-model="details.favoriteJsFramework">
           <option disabled value="">Seleziona JS framework preferito</option>
           <option
@@ -114,15 +132,17 @@
               :id="cssFramework"
               :value="cssFramework"
               v-model="details.cssFrameworks"
-              class="form-check-input" 
+              class="form-check-input"
             />
-            <label class="form-check-label"  :for="cssFramework">{{ cssFramework }}</label>
+            <label class="form-check-label" :for="cssFramework">{{
+              cssFramework
+            }}</label>
           </template>
         </fieldset>
       </div>
-      
-        <fieldset>
-            <div class="mb-3">
+
+      <fieldset>
+        <div class="mb-3">
           <legend>Javascript è il tuo linguaggio preferito?</legend>
 
           <!-- grazie a v-bind associamo un valore booleano -->
@@ -143,10 +163,9 @@
             name="flexRadioDefault"
           />
           <label class="form-check-label" for="flexRadioDefault1">No</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Invia</button>
-        </fieldset>
-      
+        </div>
+        <button type="submit" class="btn btn-primary">Invia</button>
+      </fieldset>
     </form>
   </div>
 </template>
@@ -160,7 +179,7 @@ export default {
       value1: "",
       value2: "",
       value3: "",
-      value4: undefined,
+      value4: 0,
       checked: [],
       options: ["angular", "react", "vue"],
       details: {
@@ -184,6 +203,12 @@ export default {
   methods: {
     onSubmit() {
       console.log(this.details);
+    },
+    validate() {
+      console.log( "Passato come stringa" +" "+  this.value3);
+    },
+    validate2() {
+      console.log(`passato come numero sicuramente ${this.value4}`);
     },
   },
 };
