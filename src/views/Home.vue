@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <br>
     <div v-html="html"></div>
     <p>
       {{ msg }}
@@ -35,7 +36,7 @@ export default {
       },
       warningClass: "btn-warning",
       html: `
-          <p style="color: blue; font-size: 2em;" class="my-class">
+          <p style="color: black; font-size: 2em;" class="my-class">
             Guida completa ,LATO CODICE, a Vue.js, framework Javascript per la creazione di interfacce utente e single-page applications 
             di nuova generazione. <br>Nato da Evan You, ex sviluppatore di Google, Vue.js si prefigge l'obiettivo di "prendere il meglio" 
             di AngularJS per creare qualcosa di veramente snello ed efficiente nell'ambito delle moderne tecnologie di sviluppo.<br>

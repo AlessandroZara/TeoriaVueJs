@@ -16,54 +16,69 @@
     </ul>
     <br />
     <br />
-    <main id="root2">
+    <div id="root2">
       <ul>
         <li :key="index" v-for="(item, index) in shoppingListItems">
           {{ item }}
         </li>
       </ul>
-    </main>
+    </div>
 
-    <main id="root3">
+    <div id="root3">
       <ul>
         <li :key="index" v-for="(item, index) in shoppingListItems2">
           {{ index }}. {{ item.name }} - {{ item.price }}
         </li>
       </ul>
-    </main>
+    </div>
     <br />
     <br />
-    <main id="root">
+    <div id="root">
       <button @click="filter">Meno di €2.50</button>
       <ul>
         <li v-for="item3 in shoppingListItems3" :key="item3.id">
           {{ item3.name }} - €{{ item3.price }}
         </li>
       </ul>
-    </main>
+    </div>
     <br />
     <br />
     <br />
-    <main id="root4">
+    <div id="root4">
       <ul>
         <li :key="index2" v-for="(value, key, index2) in list">
           {{ index2 }}. {{ key }}: {{ value }}
         </li>
       </ul>
-    </main>
+    </div>
     <br />
     <br />
     <br />
-    <main id="root">
+    <div id="root5">
       <button @click="addQuantity">Aggiungi Proprietà</button>
       <ul>
         <li :key="key" v-for="(value2, key) in item5">
           {{ key }} - {{ value2 }}
         </li>
       </ul>
-    </main>
+    </div>
     <br>
     <br>
+    <div id="root5" >
+     <h2>Ciclo for Select</h2> 
+    <select v-model="selected">
+      <option disabled value="">Please select one</option>
+      <option 
+        v-for="option in options" 
+        :key="option" 
+        :value="option">{{ option }}</option>
+    </select>
+    <p>Hai selezionato: {{ selected }}</p>
+  </div>
+  <br>
+  <br>
+  <br>
+
     <section>
       <div>
         <p>Spesso si ha la necessità di usare la direttiva <strong> v-for</strong> insieme <strong> v-if</strong>. 
@@ -115,7 +130,15 @@ export default {
         name: "cacciavite",
         amount: "3.99",
       },
+      // ciclo for della select
+      selected: '',
+      options: [
+        'Angular',
+        'React',
+        'Vue'
+      ]
     };
+    
   },
   methods: {
     filter() {

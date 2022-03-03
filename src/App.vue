@@ -3,12 +3,14 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/page2">Page2</router-link>|
       <router-link to="/v-else">V-Else</router-link>|
+       <router-link to="v-model&v-bind">V-Model</router-link>|
        <router-link to="/key">Key</router-link>|
        <router-link to="/v-for">V-For</router-link>|
        <router-link to="/computed">Computed</router-link>|
        <router-link to="/slot">Slot</router-link>|
        <router-link to="/lifecycle-components">LifeCycleComponents</router-link>|
        <router-link to="/componenti-dinamici">Componenti Dinamici</router-link>|
+       <router-link to="/form">Form</router-link>|
       <router-view />
   </div>
     

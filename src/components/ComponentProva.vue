@@ -7,14 +7,7 @@
 <script>
 export default {
  name:'',
- data() {
-   return {
-   
-   } 
-  },
- methods:{
-
-  },
+ props: ['name'],
 }
 </script>
 
