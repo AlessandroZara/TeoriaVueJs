@@ -7,6 +7,7 @@
        <router-link to="/v-for">V-For</router-link>|
        <router-link to="/computed">Computed</router-link>|
        <router-link to="/slot">Slot</router-link>|
+       <router-link to="/lifecycle-components">LifeCycleComponents</router-link>|
       <router-view />
   </div>
     
