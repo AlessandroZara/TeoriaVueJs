@@ -11,6 +11,7 @@
        <router-link to="/lifecycle-components">LifeCycleComponents</router-link>|
        <router-link to="/componenti-dinamici">Componenti Dinamici</router-link>|
        <router-link to="/form">Form</router-link>|
+       <router-link to="/direttivepersonalizzate">Filtri</router-link>|
       <router-view />
   </div>
     

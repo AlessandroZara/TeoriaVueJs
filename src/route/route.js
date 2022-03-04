@@ -10,8 +10,8 @@ import Slot from '../views/Slot.vue'
 import LifeCicleComponents from '../views/LifieCylcleComponents.vue';
 import ComponentiDinamici from '../views/ComponentiDinamici.vue';
 import Form from '../views/Form.vue'
-
-
+import DirettivePersonalizzate from '../views/DirettivePers.vue'
+import Filtri from  '../views/Filtri.vue'
 
 const routes = [
   {
@@ -68,6 +68,16 @@ const routes = [
     path: "/form",
       name: "Form",
       component: Form,
+  },
+  {
+    path: "/direttivepersonalizzate",
+      name: "direttivepersonalizzate",
+      component: DirettivePersonalizzate,
+  },
+  {
+    path: "/filtri",
+      name: "filtri",
+      component: Filtri,
   },
   ];
 
